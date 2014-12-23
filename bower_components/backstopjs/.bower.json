@@ -1,0 +1,25 @@
+{
+  "name": "BackstopJS",
+  "version": "0.2.5",
+  "main": "/",
+  "ignore": [
+    "node_modules",
+    "bitmaps_test",
+    "*.sublime*",
+    "capture/config.json",
+    "compare/config.json"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://github.com/garris/BackstopJS",
+  "_release": "0.2.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.5",
+    "commit": "ddc869fe97146fdb3e4883d16aad29e9836fa400"
+  },
+  "_source": "git://github.com/garris/BackstopJS.git",
+  "_target": "~0.2.5",
+  "_originalSource": "backstopjs",
+  "_direct": true
+}
