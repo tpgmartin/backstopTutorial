@@ -26,5 +26,5 @@ for (var elem = 0, max = Elements.length; elem < max; elem++) {
     }
   }
 }
-var classList = [];
-for (var name in selectorNames) classList.push(name);
+var selectorList = [];
+for (var name in selectorNames) selectorList.push(name);
