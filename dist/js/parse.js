@@ -1,4 +1,4 @@
-var Elements = document.body.getElementsByTagName('*');
+var Elements = document.getElementsByTagName('*');
 var selectorNames = {};
 for (var elem = 0, max = Elements.length; elem < max; elem++) {
   var selector = Elements[elem];
