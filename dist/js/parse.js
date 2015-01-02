@@ -8,14 +8,14 @@ for (var elem = 0, max = Elements.length; elem < max; elem++) {
     for (var cn = 0; cn < classes.length; cn++){
       var cName = classes[cn];
       if (!selectorNames[cName]) {
-        selectorNames[cName] = true;
+        selectorNames["." + cName] = true;
       }
     }
   }   
   // Check for ids
   if (selector.id) {
     if (!selectorNames[selector.id]) {
-      selectorNames[selector.id] = true;
+      selectorNames["#" + selector.id] = true;
     }
   }
   // Check for tag names
@@ -27,5 +27,4 @@ for (var elem = 0, max = Elements.length; elem < max; elem++) {
   }
 }
 var selectorList = [];
-for (var name in selectorNames) selectorList.push(name);
-selectorList = selectorList.join('\n,');
+for (var name in selectorNames) config.grabConfigs[0].selectors.push(name);
