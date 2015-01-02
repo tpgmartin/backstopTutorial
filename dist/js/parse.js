@@ -28,3 +28,4 @@ for (var elem = 0, max = Elements.length; elem < max; elem++) {
 }
 var selectorList = [];
 for (var name in selectorNames) selectorList.push(name);
+selectorList = selectorList.join('\n,');
