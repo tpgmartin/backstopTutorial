@@ -13,7 +13,7 @@ var serverPidFile 								= __dirname+'/server.pid';
 var bitmaps_reference 						= __dirname+'/bitmaps_reference';
 var bitmaps_test 									= 'bitmaps_test';
 
-var backstopConfigFileName 				= path.join(__dirname, '../..', 'backstop.json')
+var backstopConfigFileName 				= config //path.join(__dirname, '../..', 'backstop.json')
 
 var captureConfigFileName 				= __dirname+'/capture/config.json';
 var captureConfigFileNameCache 		= __dirname+'/capture/.config.json.cache';
@@ -300,7 +300,10 @@ gulp.task("stop",function(){
 });
 
 
-gulp.task('default',function(){});
+gulp.task('default',function(){
+	console.log(path.join(__dirname, '../..', 'backstop.json'));
+	// console.log(config);
+});
 
 
 

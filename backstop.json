@@ -20,7 +20,6 @@ var config = {
 			,"hideSelectors": [
 			]
 			,"removeSelectors": [
-				"#carbonads-container"
 			]
 			,"selectors":[
 			]
